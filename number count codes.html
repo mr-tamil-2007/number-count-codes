@@ -1,0 +1,117 @@
+age=12
+if age>=19:
+    print("You are young.")
+else:
+    print("You are older.")
+''''''
+markes=1
+if markes>=90:
+    print("great a")
+elif markes>=60:
+    print("great b")
+elif markes>=30:
+    print("great c")
+elif markes>=20:
+    print("great d")
+else:
+    print("great e")
+'''
+'''
+age=17
+lenicence="no"
+if age>=18:
+    if lenicence=="yes":
+        print("you can drive")
+    else:
+        print("you go to lenicence")
+else:
+    print("you are young")
+'''
+'''
+markes=80
+atteince=75
+if markes>=75 or atteince>=90:
+    print("allowed in exam")
+else:
+    print("not allowed in exam")
+'''
+'''
+order_number=1000
+days=("sat")
+numbership="no"
+if (order_number>=1000 and days in ["sat","mon"])or numbership=="yes":
+    print("you are going to numbership")
+else:
+    print("you are not going to numbership")
+'''
+'''
+names=["tamil","arasan","santhosh","gokul","rahul"]
+for test in names:
+    print(test.upper())
+'''
+'''
+curret_password="1234"
+enter_pin=""
+while enter_pin!=curret_password:
+    enter_pin=input("enter the pin:")
+print("hi")
+'''
+'''
+names=["tamil","arasan","santhosh","gokul"]
+for i in names:
+    if i=="santhosh":
+        break
+    print(i)
+'''
+'''
+numbers=[-5,6,-7,8,-9]
+for num in numbers:
+    if num <0:
+        continue
+    print(num)
+'''
+'''
+numbers=[-5,6,-7,8,-9]
+for num in numbers:
+    pass #future logic implmention
+
+''''''
+count=5
+while count>0:
+    print(count)
+    count-=1
+print("count end")
+
+'''
+'''
+items = []
+
+while True:
+    item = input("Enter item: ")
+    if item == "end":
+        break
+    items.append(item)
+
+print(items)
+'''
+'''
+def mrtamil():
+    print("welcome to my python code base")
+'''
+'''
+def great(name):
+    print(f"hi {name},welcome to my python code base")
+
+great("arasu")
+'''
+'''
+def num(a,b):
+    return a+b
+'''
+'''
+def add(*args):
+    total=0
+    for num in args:
+        total+=num
+    return total
+print(add(1,2,3,4,5))
