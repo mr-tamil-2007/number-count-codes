@@ -1,0 +1,29 @@
+sub =lambda a,b : a-b
+print(sub(1,2))
+     #map function
+
+furist=["python","java","c++"]
+result=list(map(lambda furis:furis.upper(),furist))
+print(result)
+'''
+'''
+slist=[1,2,3,4,5,6,7,8,9]
+result=list(filter(lambda x:x%2==0,slist))
+print(result)
+'''
+'''
+from functools import reduce
+num=[1,2,3,4]
+result=reduce(lambda a,b:a+b,num)
+#3+3,4
+#6,4
+#10
+print(result)
+
+#filter (function ,iterable)
+#map(function,iterable)
+#reduce(function,iterable)
+from functools import reduce
+number=[1,22,77,44,5]
+num=reduce(lambda a,b:a if a>b else b,number)
+print(num)
