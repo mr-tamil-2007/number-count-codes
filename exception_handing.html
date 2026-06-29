@@ -1,0 +1,29 @@
+print("Step 1: Start")
+a = 10
+b = 0
+result = a / b   # Crash here
+print("Step 2: Result is", result)
+
+# try throw except finally
+
+from sqlalchemy.sql.coercions import expect
+
+print("welcome to my zomoto")
+number_items=int(input("How many items do you have?"))
+item_prince=200 * number_items
+average_price=item_prince/number_items
+print("average price", average_price)
+
+
+#using in try ,throw ,except ,finally
+try:
+    print("welcome to my zomoto")
+    number_items=int(input("How many items do you have?"))
+    item_prince=200 * number_items
+    average_price=item_prince/number_items
+    print("average price", average_price)
+except ZeroDivisionError:
+    print("You can't divide by zero")
+finally:
+    print("see you later")
+print("seccessfully Try again")

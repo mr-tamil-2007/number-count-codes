@@ -1,0 +1,13 @@
+from functools import partial
+________________________________________________
+def tex_claculater (total_amunt,prie_amount):
+    return total_amunt *(1+ prie_amount)
+fixed_aumount= partial(tex_claculater, prie_amount=0.18)
+print(fixed_aumount(15))
+print(fixed_aumount(16))
+print(fixed_aumount(14))
+_________________________________________________
+def email_accunt (email_name,diomain):
+    return f"{email_name}&{diomain}"
+gmail=partial(email_accunt,diomain='gmail')
+print(gmail("mr_tamil"))
